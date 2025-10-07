@@ -1,0 +1,4 @@
+Checks: '*'
+HeaderFilterRegex: ''
+AnalyzeTemporaryDtors: false
+FormatStyle: none
