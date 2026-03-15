@@ -23,6 +23,9 @@ CMakeFiles/
 *.dylib
 *.dll
 
+# Archives
+*.zip
+
 # macOS junk
 .DS_Store
 .AppleDouble
