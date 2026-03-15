@@ -1,5 +1,3 @@
-#define _GLIBCXX_DEBUG
-#define _GLIBCXX_DEBUG_PEDANTIC
 #include <algorithm>
 #include <iostream>
 #include <optional>
@@ -71,9 +69,9 @@ bool IsSubdomain(const Domain& subdomain, const Domain& domain) {
   const auto subdomain_reversed_parts = subdomain.GetReversedParts();
   const auto domain_reversed_parts = domain.GetReversedParts();
   return
-      subdomain.GetPartCount() <= domain.GetPartCount()
-      && equal(begin(subdomain_reversed_parts), end(subdomain_reversed_parts),
-               begin(domain_reversed_parts));
+      subdomain.GetPartCount() >= domain.GetPartCount()
+      && equal(begin(domain_reversed_parts), end(domain_reversed_parts),
+               begin(subdomain_reversed_parts));
 }
 
 bool IsSubOrSuperDomain(const Domain& lhs, const Domain& rhs) {

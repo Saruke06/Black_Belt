@@ -1,7 +1,7 @@
 Bad
-Good
-Good
-Good
-Good
+Bad
+Bad
+Bad
+Bad
 Good
 Good

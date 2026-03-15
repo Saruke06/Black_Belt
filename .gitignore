@@ -1,1 +1,44 @@
+# Build directories anywhere in the course
+build/
+*/build/
+**/build/
+
+# CMake generated files
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+CMakeFiles/
+**/CMakeFiles/
+
+# Common compiled binaries and objects
+*.o
+*.obj
+*.out
 *.exe
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+
+# macOS junk
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# VS Code local workspace noise
+.vscode/
+
+# CLion / JetBrains noise if it ever appears
+.idea/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
